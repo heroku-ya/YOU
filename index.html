@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom Page</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #4a0606;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-family: IM FELL DW PICA" ;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>I LOVE YOU</h1>
+        <p>SHAYLAA CLICK</p>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="THE.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        window.addEventListener("click", function() {
+            let audio = document.getElementById("bg-music");
+            audio.play();
+        }, { once: true }); // Runs only once
+    </script>
+
+</body>
+</html>
